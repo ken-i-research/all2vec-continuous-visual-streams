@@ -1,0 +1,16 @@
+# PyTorch 2.7.1 + CUDA 12.8 用の requirements
+# Requires: Python 3.13.x（pip は Python 本体をインストールしないため、環境は別途 3.13 系をご用意ください）
+--index-url https://download.pytorch.org/whl/cu128
+--extra-index-url https://pypi.org/simple
+
+# バージョン整合（2025-09-26 時点）
+# Python バージョンが 3.13 系であることを環境マーカーで指定
+torch==2.7.1; python_version >= "3.13" and python_version < "3.14"
+torchvision==0.22.1; python_version >= "3.13" and python_version < "3.14"
+torchaudio==2.7.1; python_version >= "3.13" and python_version < "3.14"
+
+opencv-python
+numpy
+matplotlib
+scikit-learn
+pillow
