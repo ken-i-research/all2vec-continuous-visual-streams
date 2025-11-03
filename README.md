@@ -53,8 +53,7 @@ For questions or early access requests, contact: ken.i.research@gmail.com
 ├── src/                      # Source code (coming soon)
 │   ├── model.py             # Core architecture
 │   ├── train.py             # Training loop
-│   ├── visualize.py         # Real-time visualization
-│   └── run_continuous.py    # Main entry point
+│   └── visualize.py         # Real-time visualization
 ├── examples/                 # Usage examples (coming soon)
 ├── assets/                   # Demo visualizations (coming soon)
 ├── requirements.txt
