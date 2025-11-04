@@ -18,17 +18,15 @@ continuous processing of visual streams through predictive state spaces.
 - **Cross-Domain Generalization:** Transfers immediately across visual domains
 - **Consumer Hardware:** Runs on RTX 5060 at 9-10 Hz
 
-### Quick Start
+## Quick Start
 
-**Note:** Full implementation code will be released following paper review and publication. 
-The repository currently contains project documentation and will be updated with:
+**Status: ✅ Code Released!**
 
-- Complete training implementation
-- Real-time visualization tools
-- Pre-trained model checkpoints
-- Usage examples and tutorials
-
-For the current live demo preview:
+### Installation
+```bash
+git clone https://github.com/ken-i-research/all2vec-continuous-visual-streams.git
+cd all2vec-continuous-visual-streams
+pip install -r requirements.txt
 
 - **Run the live webcam demo** (from the repository root):
   ```bash
@@ -37,20 +35,6 @@ For the current live demo preview:
   （or, equivalently `python src/all2vec/train.py` if you prefer calling the script directly.）
 
 Star/watch this repository to be notified of updates.
-
-### Planned Usage (Preview)
-```bash
-# Installation (coming soon)
-git clone https://github.com/ken-i-research/all2vec-continuous-visual-streams.git
-cd all2vec-continuous-visual-streams
-pip install -r requirements.txt
-
-# Real-time webcam processing with visualization
-python src/run_continuous.py --webcam --visualize
-
-# Process video file
-python src/run_continuous.py --video path/to/video.mp4
-```
 
 For questions or early access requests, contact: ken.i.research@gmail.com
 
@@ -72,6 +56,10 @@ For questions or early access requests, contact: ken.i.research@gmail.com
 
 ## Requirements
 ```
+- Python 3.13+
+- NVIDIA GPU (tested on RTX 5060)
+- CUDA 12.8
+
 torch==2.7.1; python_version >= "3.13" and python_version < "3.14"
 torchvision==0.22.1; python_version >= "3.13" and python_version < "3.14"
 torchaudio==2.7.1; python_version >= "3.13" and python_version < "3.14"
