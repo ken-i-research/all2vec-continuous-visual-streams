@@ -18,7 +18,7 @@ continuous processing of visual streams through predictive state spaces.
 - **Cross-Domain Generalization:** Transfers immediately across visual domains
 - **Consumer Hardware:** Runs on RTX 5060 at 9-10 Hz
 
-## Quick Start
+### Quick Start
 
 **Note:** Full implementation code will be released following paper review and publication. 
 The repository currently contains project documentation and will be updated with:
@@ -27,6 +27,14 @@ The repository currently contains project documentation and will be updated with
 - Real-time visualization tools
 - Pre-trained model checkpoints
 - Usage examples and tutorials
+
+For the current live demo preview:
+
+- **Run the live webcam demo** (from the repository root):
+  ```bash
+  python -m all2vec.train
+  ```
+  （or, equivalently `python src/all2vec/train.py` if you prefer calling the script directly.）
 
 Star/watch this repository to be notified of updates.
 
@@ -51,9 +59,11 @@ For questions or early access requests, contact: ken.i.research@gmail.com
 ├── paper/
 │   └── all2vec.pdf           # Paper (will be added post-Zenodo)
 ├── src/                      # Source code (coming soon)
-│   ├── model.py             # Core architecture
-│   ├── train.py             # Training loop
-│   └── visualize.py         # Real-time visualization
+│   └── all2vec/
+│       ├── __init__.py
+│       ├── model.py           # Core architecture
+│       ├── train.py           # Training loop
+│       └── visualize.py       # Real-time visualization
 ├── examples/                 # Usage examples (coming soon)
 ├── assets/                   # Demo visualizations (coming soon)
 ├── requirements.txt
