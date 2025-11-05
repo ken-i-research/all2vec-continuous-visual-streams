@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="assets/all2vec-logo.png" width="200">
+  <h1>ALL2Vec</h1>
+  <p>Continuous Predictive Representations for Dynamic Visual Streams</p>
+</div>
+
 # Continuous Predictive Representations for Dynamic Visual Streams (ALL2Vec)
 
 **Author:** Ken I.  
